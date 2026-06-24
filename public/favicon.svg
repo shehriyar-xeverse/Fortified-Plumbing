@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient matching Navbar/Footer -->
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F766E" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+    <!-- Inner Glow Gradient for subtle depth -->
+    <radialGradient id="glow" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.25" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Rounded Base (representing the Navbar's rounded logo box) -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#grad)" />
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#glow)" />
+
+  <!-- Shield Shape (Lucide-react Shield path scaled and centered) -->
+  <path d="M256 390s112-56 112-140V154l-112-42-112 42v96c0 84 112 140 112 140z" 
+        fill="none" 
+        stroke="#FFFFFF" 
+        stroke-width="28" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+        
+  <!-- Glowing Teal Dot (representing active technology) -->
+  <circle cx="390" cy="122" r="24" fill="#14B8A6" />
+  <circle cx="390" cy="122" r="44" fill="none" stroke="#14B8A6" stroke-width="10" opacity="0.4" />
+</svg>
